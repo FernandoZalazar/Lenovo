@@ -7,10 +7,10 @@ iconMenu.addEventListener('click', (e) =>{
 
     const rutaActual = e.target.getAttribute('src');
 
-    if(rutaActual == '/image/icon-menu.png'){
-        e.target.setAttribute('src', '/image/icon-menu2.png');
+    if(rutaActual == './image/icon-menu.png'){
+        e.target.setAttribute('src', './image/icon-menu2.png');
     }else{
-        e.target.setAttribute('src', '/image/icon-menu.png');
+        e.target.setAttribute('src', './image/icon-menu.png');
     }
 });
 
@@ -23,10 +23,10 @@ iconProduct.addEventListener('click', (e) =>{
 
     const rutaActualone = e.target.getAttribute('src');
 
-    if(rutaActualone == '/image/product.png'){
-        e.target.setAttribute('src', '/image/product2.png');
+    if(rutaActualone == './image/product.png'){
+        e.target.setAttribute('src', './image/product2.png');
     }else{
-        e.target.setAttribute('src', '/image/product.png');
+        e.target.setAttribute('src', './image/product.png');
     }
 });
 
@@ -39,9 +39,9 @@ iconPlus.addEventListener('click', (e) =>{
 
     const rutaActualtwo = e.target.getAttribute('src');
 
-    if(rutaActualtwo == '/image/plus.png'){
-        e.target.setAttribute('src', '/image/plus2.png');
+    if(rutaActualtwo == './image/plus.png'){
+        e.target.setAttribute('src', './image/plus2.png');
     }else{
-        e.target.setAttribute('src', '/image/plus.png');
+        e.target.setAttribute('src', './image/plus.png');
     }
 });
