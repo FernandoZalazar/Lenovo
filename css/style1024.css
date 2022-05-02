@@ -1,0 +1,183 @@
+@media screen and (min-width: 1024px)  and (max-width: 1333px){
+    #navProduct{
+        display: grid;
+        grid-template-areas:
+        "laptops desktops workstations tablets accessories monitors smart office gaming business students sale";
+        grid-template-columns: 7% 7% 9% 6% 14% 7% 9% 15% 7% 6% 6% 6%;
+        grid-template-rows: 100%;
+        background-color: #F8F8F8;
+        height: 2.5rem;
+        justify-items: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .product{
+        text-decoration: none;
+        color: black;
+        font-family: 'Lato-regular';
+        width: 100%;
+        height: 40%;
+        border-right: #555555 solid 1px;
+        padding-top: 0.3rem;
+        margin-left: 0.3rem;
+        text-align: center;
+    }
+    #navlogo{
+        display: grid;
+        grid-template-areas:
+        "lenovo . compare empty locator contact user rewards cart";
+        grid-template-columns: 6% 76.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% ;
+        grid-template-rows: 100%;
+    }
+    .dispos{
+        margin-top: 0.6rem;
+    }
+    .lenovo{
+        grid-area: lenovo;
+        width: 6.8rem;
+        height: 2.2rem;
+    }
+    .compare{
+        grid-area: compare;
+    }
+    .empty{
+        grid-area: empty;
+    }
+    .locator{
+        grid-area: locator;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    .user{
+        grid-area: user;
+    }
+    .rewards{
+        grid-area: rewards;
+    }
+    .cart{
+        grid-area: cart;
+    }
+
+    #navbar{
+        display: grid;
+        grid-template-areas:
+        "pct ps data services support . search";
+        grid-template-columns: 7% 12% 7% 10% 5% 38% 20% ;
+        grid-template-rows: 100%;
+        height: 2rem;
+        justify-items: left;
+        align-items: center;
+        font-size: 0.6rem;
+    }
+    .styles{
+        text-decoration: none;
+        color: black;
+        font-family: "Lato-black";
+    }
+    .pct{
+        grid-area: pct;
+        margin-left: 1rem;
+    }
+    .ps{
+        grid-area: ps;
+        margin-left: 1.5rem;
+    }
+    .data{
+        grid-area: data;
+    }
+    .services{
+        grid-area: services;
+    }
+    .support{
+        grid-area: support;
+    }
+    #divSearch{
+        grid-area: search;
+        display: grid;
+        grid-template-areas: "h1 searchh";
+        grid-template-columns: 90% 10%;
+        grid-template-rows: 100%;
+        border: solid 1px black;
+        border-radius: 3px;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+    .h1{
+        grid-area: h1;
+        margin-left: 0.5rem;
+        font-size: 0.7rem;
+        font-family: 'Lato-regular';
+    }
+    .searchh{
+        grid-area: searchh;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .img{
+        margin-top: 0.4rem;
+        margin-left: 0.3rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+    #section{
+        height: 70rem;
+    }
+    .divtres{
+        grid-area: divtres;
+        display: grid;
+        grid-template-areas:
+        "matching low"
+        "noteone notetwo"
+        "notethree notefour";
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: 4% 48% 48%;
+        height: 45rem;
+    
+    }
+    .matching{
+        grid-area: matching;
+        margin-top: 2rem;
+        margin-left: 3rem;
+
+    }
+    .notestyle{
+        border: #9b9b9b solid 1px;
+        border-radius: 3px;
+        margin-top: 2rem;
+    }
+    .noteone{
+        grid-area: noteone;
+        margin-left: 5rem;
+    }
+    .noteonefour{
+        display: grid;
+        grid-template-areas:
+        "doorbusterone"
+        "imgnoteone"
+        "noteonename"
+        "noteoneprice"
+        "noteoneinfo"
+        "noteoneadd";
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 45% 10% 15% 10% 10%;
+        justify-items: left;
+        align-items: center;
+        height: 18rem;
+        width: 9rem;
+        padding: 1rem;
+        margin-top: 11rem;
+    }
+    .notetwo{
+        grid-area: notetwo;
+    }
+    .notethree{
+        grid-area: notethree;
+        margin-left: 5rem;
+    }
+    .notefour{
+        grid-area: notefour;
+    }
+}

@@ -1,0 +1,526 @@
+/*FONTS*/
+@font-face {
+    font-family: 'Lato';
+    src: url(fonts/Lato/Lato-Thin.ttf);
+}
+@font-face {
+    font-family: 'Lato-bold';
+    src: url(fonts/Lato/Lato-Bold.ttf);
+}
+@font-face {
+    font-family: 'Lato-regular';
+    src: url(fonts/Lato/Lato-Regular.ttf);
+}
+@font-face {
+    font-family: 'Lato-black';
+    src: url(fonts/Lato//Lato-Black.ttf);
+}
+
+* {
+    margin: 0%;
+    padding: 0%;
+}
+#header{
+    max-width: 1920px;
+    max-height: 1010px;
+    min-width: 320px;
+}
+/* -----------------------------  NAV LENOVO LOGO --------------------------------- */
+
+#icon-menu{
+    display: none;
+}
+#icon-plus{
+    display: none;
+}
+#icon-product{
+    display: none;
+}
+/* -------------------------------- NAVBAR -------------------------  */
+
+/* --------------------------------- NAV PRODUCT ------------------------------- */
+
+#navProduct{
+    display: grid;
+    grid-template-areas:
+    " . laptops desktops workstations tablets accessories monitors smart office gaming business students sale . ";
+    grid-template-columns:  9% 5% 5% 8% 5% 13% 5% 8% 13% 5% 5% 5% 5% 9% ;
+    grid-template-rows: 100%;
+    background-color: #F8F8F8;
+    height: 2.5rem;
+    justify-items: center;
+    align-items: center;
+    font-size: 0.8rem;
+}
+.product{
+    text-decoration: none;
+    color: black;
+    font-family: 'Lato-regular';
+}
+.laptops{
+    grid-area: laptops;
+}
+.desktops{
+    grid-area: desktops;
+}
+.workstations{
+    grid-area: workstations;
+}
+.tablets{
+    grid-area: tablets;
+}
+.accessories{
+    grid-area: accessories;
+}
+.monitors{
+    grid-area: monitors;
+}
+.smart{
+    grid-area: smart;
+}
+.office{
+    grid-area: office;
+}
+.gaming{
+    grid-area: gaming;
+}
+.business{
+    grid-area: business;
+}
+.students{
+    grid-area: students;
+}
+.sale{
+    grid-area: sale;
+    color: red;
+}
+
+/* ------------------------------------- SHOP NOW--------------------------------*/
+
+.shopNow{
+    display: grid;
+    background-color: #AF0E4E;
+    width: 100%;
+    height: 2.6rem;
+    justify-items: center;
+    align-items: center;
+}
+.shopNowP{
+    color: white;
+    font-size: 1rem;
+    font-family: "Lato";
+}
+.bold{
+    font-family: "Lato-bold";
+}
+.shop{
+    color: white;
+    text-decoration: none;
+    border-bottom: solid 1px rgba(255, 255, 255, 0.616);
+    padding-bottom: 3px;
+    margin-left: 8px;
+}
+
+/* --------------------------------- NAV PRODUCT TWO-------------------------- */
+
+.subTitles{
+    display: grid;
+    grid-template-areas:
+    ". models tech features reviews compatible ss .";
+    grid-template-columns: 13% 11% 11% 11% 11% 17% 12% 14% ;
+    grid-template-rows: 100%;
+    height: 3rem;
+    justify-items: left;
+    align-items: center;
+    font-size: 1.2rem;
+    border-bottom: solid 1px black;
+}
+.styleST{
+    color: #555555;
+    text-decoration: none;
+    font-family: 'Lato-regular';
+}
+.models{
+    grid-area: models;
+}
+.tech{
+    grid-area: tech;
+}
+.features{
+    grid-area: features;
+}
+.reviews{
+    grid-area: reviews;
+}
+.compatible{
+    grid-area: compatible;
+}
+.ss{
+    grid-area: ss;
+}
+
+/* -------------------------------- SECTION -------------------------- */
+
+#section{
+    display: grid;
+    grid-template-areas:
+    "h2"
+    "laptopss"
+    "pie";
+    grid-template-columns: 100%;
+    grid-template-rows: 5% 75% 20%;
+    margin-right: 12rem;
+    margin-left: 11rem;
+    margin-top: 3rem;
+    height: 38rem;
+}
+.h2{
+    grid-area: h2;
+    font-family: 'Lato-regular';
+    border-bottom: solid 0.1px #9b9b9b ;
+}
+
+/* -----------------------------PRICE ---------------------------- */
+
+.divuno{
+    grid-area: laptopss;
+    display: grid;
+    grid-template-areas:
+    "divdos divtres";
+    grid-template-columns: 20% 80% ;
+    grid-template-rows: 100%;
+    height: 15rem;
+}
+.divdos{
+    grid-area: divdos;
+    display: grid;
+    grid-template-areas:
+    "price . arrow"
+    "bb2 two ."
+    "bb4 four ."
+    "bb3 three ."
+    "seemore seemore .";
+    grid-template-columns: 14% 71% 15% ;
+    grid-template-rows: repeat(5,auto);
+    justify-items: left;
+    align-items: center;
+    border-bottom: #9b9b9b  solid 1px;
+    padding-bottom: 0.5rem;
+    height: 10rem;
+}
+.price{
+    grid-area: price;
+    font-size: 0.8rem;
+    font-family: 'Lato-bold';
+}
+.arrow{
+    grid-area: arrow;
+    margin-left: 1rem;
+}
+.black2{
+    grid-area: bb2;
+    background-color: black;
+    border-radius: 3px;
+    width: 1.2rem;
+}
+.black4{
+    grid-area: bb4;
+    background-color: black;
+    border-radius: 3px;
+    width: 1.2rem;
+}
+.black3{
+    grid-area: bb3;
+    background-color: black;
+    border-radius: 3px;
+    width: 1.2rem;
+}
+.two{
+    color: #555555;
+    grid-area: two;
+    font-size: 0.8rem;
+    font-family: 'Lato-regular';
+}
+.four{
+    color: #555555;
+    grid-area: four;
+    font-size: 0.8rem;
+    font-family: 'Lato-regular';
+}
+.three{
+    color: #555555;
+    grid-area: three;
+    font-size: 0.8rem;
+    font-family: 'Lato-regular';
+}
+.seemore{
+    text-decoration: none;
+    color: #0D5C91;
+    grid-area: seemore;
+    font-size: 0.8rem;
+    font-family: 'Lato-regular';
+}
+
+/* ------------------------------ PRODUCT NOTEBOOKS ------------------------------- */
+
+.divtres{
+    grid-area: divtres;
+    display: grid;
+    grid-template-areas:
+    "matching . . low"
+    "noteone notetwo notethree notefour";
+    grid-template-columns: repeat(4,auto);
+    grid-template-rows: 10% 90%;
+    justify-items: left;
+    align-items: center;
+    height: 18rem;
+
+}
+.matching{
+    grid-area: matching;
+    margin-top: 2rem;
+    margin-left: 1rem;
+    font-size: 1rem;
+    font-family: 'Lato-regular';
+}
+.low{
+    color: black;
+    grid-area: low;
+    font-size: 0.8rem;
+    border: solid 1px #BCBCBC;
+    border-radius: 3px;
+    padding: 0.8rem;
+    margin-top: 4rem;
+    margin-left: 1.5rem;
+    width: 70%;
+    font-family: 'Lato';
+}
+.arrowBlack{
+    margin-left: 1.3rem;
+    height: 0.5rem;
+    width: 0.9rem;
+}
+.notestyle{
+    border: #9b9b9b solid 1px;
+    border-radius: 3px;
+    margin-top: 2rem;
+}
+.noteone{
+    grid-area: noteone;
+}
+.noteonefour{
+    display: grid;
+    grid-template-areas:
+    "doorbusterone"
+    "imgnoteone"
+    "noteonename"
+    "noteoneprice"
+    "noteoneinfo"
+    "noteoneadd";
+    grid-template-columns: 100%;
+    grid-template-rows: 10% 45% 10% 15% 10% 10%;
+    justify-items: left;
+    align-items: center;
+    height: 18rem;
+    width: 9rem;
+    padding: 1rem;
+    margin-top: 11rem;
+    margin-left: 1rem;
+}
+.stylenoteone{
+    font-size: 0.6rem;
+}
+.doorbusterone{
+    grid-area: doorbusterone;
+    background-color: #AF0200;
+    color: white;
+    padding: 0.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border-radius: 2px;
+    margin-bottom: 0.5rem;
+    font-size: 0.7rem;
+    font-family: 'Lato-bold';
+}
+.imgnoteone{
+    grid-area: imgnoteone;
+    height: 8rem;
+    width: 10rem;
+}
+.notebookTwo{
+    grid-area: imgnoteone;
+    height: 6rem;
+    width: 9rem;
+}
+.noteonename{
+    grid-area: noteonename;
+    font-size: 0.74rem;
+    color: #0D5C91;
+    font-family: 'Lato-bold';
+}
+.noteoneprice{
+    grid-area: noteoneprice;
+    font-size: 1.5rem;
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+    margin-bottom: 2rem;
+    font-family: 'Lato-regular';
+}
+.noteoneinfo{
+    grid-area: noteoneinfo;
+    font-family: 'Lato-regular';
+}
+.yoga{
+    font-family: 'Lato-black';
+}
+.noteoneadd{
+    grid-area: noteoneadd;
+    padding: 0.5rem;
+    color: white;
+    background-color: #0D5C91;
+    text-align: center;
+    font-size: 0.9rem;
+    text-decoration: none;
+    width: 92%;
+    border-radius: 3px;
+    font-family: 'Lato-bold';
+}
+.notetwo{
+    grid-area: notetwo;
+}
+.notethree{
+    grid-area: notethree;
+}
+.imgthree{
+    grid-area: imgnoteone;
+    margin-left: 1rem;
+    height: 6rem;
+    width: 8rem;
+}
+.notefour{
+    grid-area: notefour;
+}
+
+/* -------------------------- PIE DE SECTION--------------------*/
+
+.pie{
+    display: grid;
+    grid-area: pie;
+    background-color: #AF0E4E;
+    height: 4rem;
+    width: 100%;
+    justify-items: center;
+    align-items: center;
+}
+.pieP{
+    color: white;
+    font-size: 0.7rem;
+    margin-left: 5rem;
+    margin-right: 5rem;
+    font-family: 'Lato';
+}
+
+@media screen and (min-width: 1334px){
+
+    
+    #navlogo{
+        display: grid;
+        grid-template-areas:
+        "lenovo . compare empty locator contact user rewards cart";
+        grid-template-columns: 6% 76.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% 2.5% ;
+        grid-template-rows: 100%;
+    }
+    .dispos{
+        margin-top: 0.6rem;
+    }
+    .lenovo{
+        grid-area: lenovo;
+        width: 6.8rem;
+        height: 2.2rem;
+    }
+    .compare{
+        grid-area: compare;
+    }
+    .empty{
+        grid-area: empty;
+    }
+    .locator{
+        grid-area: locator;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    .user{
+        grid-area: user;
+    }
+    .rewards{
+        grid-area: rewards;
+    }
+    .cart{
+        grid-area: cart;
+    }
+
+    #navbar{
+        display: grid;
+        grid-template-areas:
+        "pct ps data services support . search";
+        grid-template-columns: 7% 12% 7% 10% 5% 38% 20% ;
+        grid-template-rows: 100%;
+        height: 2rem;
+        justify-items: left;
+        align-items: center;
+        font-size: 0.6rem;
+    }
+    .styles{
+        text-decoration: none;
+        color: black;
+        font-family: "Lato-black";
+    }
+    .pct{
+        grid-area: pct;
+        margin-left: 1rem;
+    }
+    .ps{
+        grid-area: ps;
+        margin-left: 1.5rem;
+    }
+    .data{
+        grid-area: data;
+    }
+    .services{
+        grid-area: services;
+    }
+    .support{
+        grid-area: support;
+    }
+    #divSearch{
+        grid-area: search;
+        display: grid;
+        grid-template-areas: "h1 searchh";
+        grid-template-columns: 90% 10%;
+        grid-template-rows: 100%;
+        border: solid 1px black;
+        border-radius: 3px;
+        align-items: center;
+        width: 100%;
+        height: 80%;
+    }
+    .h1{
+        grid-area: h1;
+        margin-left: 0.5rem;
+        font-size: 0.7rem;
+        font-family: 'Lato-regular';
+    }
+    .searchh{
+        grid-area: searchh;
+        background-color: black;
+        width: 100%;
+        height: 100%;
+    }
+    .img{
+        margin-top: 0.4rem;
+        margin-left: 0.5rem;
+        width: 0.8rem;
+        height: 0.8rem;
+    }
+}

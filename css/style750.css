@@ -1,0 +1,347 @@
+@media screen and (min-width: 750px)  and (max-width: 1023px){
+    #navProduct{
+        display: grid;
+        grid-template-areas:
+        "laptops desktops workstations"
+        "tablets accessories monitors"
+        "smart office gaming"
+        "business students sale";
+        grid-template-columns:  repeat(3,auto);
+        grid-template-rows: repeat(4,auto);
+        background-color: #F8F8F8;
+        height: 12rem;
+        width: 100%;
+        margin-top: 5rem;
+        margin-left: 37.6rem;
+        justify-items: center;
+        align-items: center;
+        font-size: 0.8rem;
+    }
+    .product{
+        text-decoration: none;
+        color: black;
+        font-family: 'Lato-regular';
+        width: 100%;
+        height: 40%;
+        border-right: #555555 solid 1px;
+        padding-top: 1rem;
+        text-align: center;
+    }
+    .laptops{
+        grid-area: laptops;
+    }
+    .desktops{
+        grid-area: desktops;
+    }
+    .workstations{
+        grid-area: workstations;
+    }
+    .tablets{
+        grid-area: tablets;
+    }
+    .accessories{
+        grid-area: accessories;
+    }
+    .monitors{
+        grid-area: monitors;
+    }
+    .smart{
+        grid-area: smart;
+    }
+    .office{
+        grid-area: office;
+    }
+    .gaming{
+        grid-area: gaming;
+    }
+    .business{
+        grid-area: business;
+    }
+    .students{
+        grid-area: students;
+    }
+    .sale{
+        grid-area: sale;
+        color: red;
+    }
+    #navlogo{
+        display: grid;
+        grid-template-areas:
+        ". . . . lenovo . . . ."
+        ". compare empty locator contact user rewards cart .";
+        grid-template-columns: 15% 10% 10% 10% 10% 10% 10% 10% 15% ;
+        grid-template-rows: 50% 50%;
+        position: absolute;
+        top: 0%;
+        left: 0%;
+        width: 100%;
+        justify-items: center;
+        align-items: center;
+    }
+    .dispos{
+        margin-top: 0.6rem;
+    }
+    .lenovo{
+        grid-area: lenovo;
+        padding-left: 20rem;
+        margin-top: 1rem;
+        height: 5rem;
+        width: 100%;
+    }
+    .compare{
+        grid-area: compare;
+    }
+    .empty{
+        grid-area: empty;
+    }
+    .locator{
+        grid-area: locator;
+    }
+    .contact{
+        grid-area: contact;
+    }
+    .user{
+        grid-area: user;
+    }
+    .rewards{
+        grid-area: rewards;
+    }
+    .cart{
+        grid-area: cart;
+    }
+
+
+    #navbar{
+        display: grid;
+        grid-template-areas:
+        "search"
+        "pct"
+        "ps"
+        "data"
+        "services"
+        "support"
+        ".";
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 10% 10% 10% 10% 10% 40%;
+        margin-top: 8rem;
+        height: 60rem;
+        justify-items: left;
+        align-items: center;
+    }
+    .styles{
+        text-decoration: none;
+        color: black;
+        font-family: "Lato-black";
+        font-size: 1.5rem;
+        margin-left: 3rem;
+    }
+    .pct{
+        grid-area: pct;
+    }
+    .ps{
+        grid-area: ps;
+
+    }
+    .data{
+        grid-area: data;
+    }
+    .services{
+        grid-area: services;
+    }
+    .support{
+        grid-area: support;
+    }
+    #divSearch{
+        grid-area: search;
+        display: grid;
+        grid-template-areas:
+        "h1 searchh ";
+        grid-template-columns: 87% 13%;
+        grid-template-rows: 100%;
+        border: solid 1px white;
+        border-radius: 3px;
+        align-items: center;
+        width: 70%;
+        height: 40%;
+        margin-left: 3rem;
+    }
+    .h1{
+        grid-area: h1;
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-family: 'Lato-regular';
+    }
+    .searchh{
+        grid-area: searchh;
+        background-color: black;
+        height: 100%;
+    }
+    .img{
+        margin-top: 0.4rem;
+        margin-left: 0.7rem;
+        width: 1.4rem;
+        height: 1.4rem;
+    }
+
+    .icon-menu{
+        margin: 25px 30px;
+        position: relative;
+        z-index: 11;
+    }
+    #icon-menu{
+        display: block;
+    }
+    .img-menu{
+        vertical-align: top;
+        width: 30px;
+        cursor: pointer;
+    }
+    .cont-menu{
+        background-color: rgba(0, 0, 0, 0.774);
+        box-shadow: 0px 0px 10px black;
+        width: 70%;
+        height: 100vh;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .5s ease;
+        z-index: 10;
+    }
+    .li{
+        list-style: none;
+    }
+    .li{
+        color: white;
+        display: block;
+        text-decoration: none;
+        cursor: pointer;
+        z-index: 10;
+    }
+    .active{
+        transform: translate(-600px);
+    }
+    .opacity{
+        background-color: rgba(0,0,0,0.5);
+        transition: all .5s ease;
+    }
+
+
+
+    .shopNow{
+        height: 2rem;
+    }
+    .shopNowP{
+        font-size: 0.8rem;
+    }
+    .subTitles{
+        display: grid;
+        grid-template-areas:
+        ". models tech features reviews compatible ss .";
+        grid-template-columns: 8% 11% 12% 11% 11% 23% 16% 8% ;
+        grid-template-rows: 100%;
+        height: 2rem;
+        font-size: 0.9rem;
+        width: 100%;
+        margin-left: 37.5rem;
+        z-index: 0;
+    }
+    #section{
+        display: grid;
+        grid-template-areas:
+        "h2"
+        "laptopss"
+        "pie";
+        grid-template-columns: 100%;
+        grid-template-rows: 3% 75% 20%;
+        margin-right: 2rem;
+        margin-left: 2rem;
+        margin-top: 2rem;
+        height: 80rem;
+    }
+    .divdos{
+        grid-area: divdos;
+        display: grid;
+        grid-template-areas:
+        "price . arrow"
+        "bb2 two ."
+        "bb4 four ."
+        "bb3 three ."
+        "seemore seemore .";
+        grid-template-columns: 8% 17% 75% ;
+        grid-template-rows: repeat(5,auto);
+        justify-items: left;
+        align-items: center;
+        border-bottom: #9b9b9b  solid 1px;
+        padding-bottom: 0.5rem;
+        height: 10rem;
+    }
+    .divuno{
+        grid-area: laptopss;
+        display: grid;
+        grid-template-areas:
+        "divdos"
+        "divtres";
+        grid-template-columns: 100%;
+        grid-template-rows: 25% 75%;
+        height: 40rem;
+    }
+    
+    .divtres{
+        grid-area: divtres;
+        display: grid;
+        grid-template-areas:
+        "matching  low"
+        "noteone notetwo"
+        "notethree notefour";
+        grid-template-columns: repeat(2,auto);
+        grid-template-rows: 3% 48.5% 48.5%;
+        justify-items: center;
+        align-items: center;
+        height: 45rem;    
+    }
+    .matching{
+        grid-area: matching;
+        margin-top: 2rem;
+        margin-left: 1rem;
+        font-size: 1rem;
+        font-family: 'Lato-regular';
+    }
+    .low{
+        grid-area: low;
+        margin-top: 4rem;
+        margin-left: 1.5rem;
+        width: 40%;
+    }
+    .notestyle{
+        border: #9b9b9b solid 1px;
+        border-radius: 3px;
+        margin-top: 2rem;
+    }
+    .noteone{
+        grid-area: noteone;
+    }
+    .noteonefour{
+        height: 18rem;
+        width: 9rem;
+        padding: 1rem;
+        margin-top: 8rem;
+        margin-left: 1rem;
+    }
+    .stylenoteone{
+        font-size: 0.6rem;
+    }
+    .notebookTwo{
+        grid-area: imgnoteone;
+        height: 6rem;
+        width: 9rem;
+    }
+    .notetwo{
+        grid-area: notetwo;
+    }
+    .notethree{
+        grid-area: notethree;
+    }
+    .notefour{
+        grid-area: notefour;
+    }
+}
